@@ -10,16 +10,25 @@ const Courses = ({match}) => (
             <h2>Courses</h2>
             <ul className="course-nav">
                 <li><NavLink to={`${match.url}/html`}>HTML</NavLink></li>
-                {/* <li><NavLink to={`${match.url}/css`}>CSS</NavLink></li> */}
-                {/* <li><NavLink to={`${match.url}/javascript`}>JavaScript</NavLink></li> */}
-
+                <li><NavLink to={`${match.url}/css`}>CSS</NavLink></li>
+                <li><NavLink to={`${match.url}/javascript`}>JavaScript</NavLink></li>
             </ul>
         </div>
+
         <Route exact path={match.path} render={ () => <Redirect to={`${match.url}/html`} /> } />
-        <Route path={`${match.path}/html`} render={
-            () => <CourseContainer data={HTMLCourses} /> } />
-        {/* <Route path={`${match.path}/css`} component={CSS}/> */}
-        {/* <Route path={`${match.path}/javascript`} component={JavaScript}/> */}
+        <Route 
+        path={`${match.path}/html`} 
+        render={ () => <CourseContainer data={HTMLCourses} /> } />
+        <Route 
+        path={`${match.path}/css`} 
+        render={ () => <CourseContainer data={CSSCourses} /> } />
+        <Route 
+        path={`${match.path}/javascript`} 
+        render={ () => <CourseContainer data={JSCourses} /> } />
+
+
+
+
 
     </div>
 
