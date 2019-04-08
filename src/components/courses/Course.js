@@ -5,10 +5,13 @@ const Course = (props) => {
 
     const { title, desc, img} = props;
     return (
-        <div>
+        <div className="course">
             <h4>{title}</h4>
-            <p>{desc}</p>
-            <img src={img} alt="figure" />
+            <div className="course-body">
+            
+                <img src={img} alt="figure" />
+                <p>{desc}</p>
+            </div>
         </div>
     )
 }

@@ -6,6 +6,17 @@ ul {
   align-content: center;
 }
 
+.course-body {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.course-body img {
+  width: 20%;
+  height: 20%;
+}
+
 .active {
   background: teal;
   color: beige;
