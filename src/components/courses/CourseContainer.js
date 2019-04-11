@@ -1,6 +1,6 @@
 import Course from './Course';
 import React from 'react';
-import { HTMLCourses } from '../../data/courses';
+// import { HTMLCourses } from '../../data/courses';
 
 const CourseContainer = (props) => {
 

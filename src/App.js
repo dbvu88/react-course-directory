@@ -6,6 +6,7 @@ import About from './components/About';
 import Courses from './components/Courses';
 import Teachers from './components/Teachers';
 import Header from './components/Header';
+import Featured from './components/Featured';
 import {
   BrowserRouter as Router,
   Route,
