@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Featured = () => {
+const Featured = props => {
+    console.log(props)
     return (
         <div>Featured</div>
     )
